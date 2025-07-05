@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.page {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  color: white;
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+h1 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.sign-text label {
+  display: block;
+  margin: 15px 0 8px;
+  font-size: 16px;
+}
+
+.sign-text input[type="text"],
+.sign-text input[type="email"],
+.sign-text input[type="password"] {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  background-color: rgba(63, 60, 60, 0.8);
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.sign-text button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(197, 29, 29);
+  color: white;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-text button:hover {
+  background-color: rgb(160, 20, 20);
+}
+
+.check {
+  margin-top: 20px;
+}
+
+.space {
+  float: right;
+  margin-top: 20px;
+  color: wheat;
+}
+
+a {
+  text-decoration: underline;
+  color: wheat;
+}
+
+h6 {
+  margin-top: 20px;
+}
+@media (min-width: 992px) {
+  .page {
+    max-width: 600px;      /* Increase width for laptops */
+    padding: 50px 40px;    /* More inner spacing */
+  }
+
+  h1 {
+    font-size: 36px;       /* Bigger heading */
+  }
+
+  .sign-text label {
+    font-size: 18px;
+  }
+
+  .sign-text input[type="text"],
+  .sign-text input[type="email"],
+  .sign-text input[type="password"] {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  .sign-text button {
+    font-size: 20px;
+    padding: 16px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+}

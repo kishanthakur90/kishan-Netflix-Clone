@@ -1,0 +1,90 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: underline;
+  color: #00aaff;
+}
+
+.welcome {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  padding: 20px;
+}
+
+#userDetails {
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+h1 {
+  background-color: black;
+  color: green;
+  padding: 15px;
+  font-size: 32px;
+  text-align: center;
+}
+
+#infoMessage {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+    padding: 12px;
+  }
+
+  #userDetails,
+  #infoMessage {
+    padding: 15px;
+    margin: 15px;
+    max-width: 90%;
+  }
+
+  .welcome {
+    top: 30px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  #userDetails,
+  #infoMessage {
+    font-size: 14px;
+    padding: 12px;
+    margin: 10px;
+  }
+
+  .welcome {
+    top: 20px;
+    padding: 10px;
+  }
+}

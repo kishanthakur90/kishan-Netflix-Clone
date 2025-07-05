@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.back{
+  width: 100vw;
+  height: 100vh;
+ object-fit: cover;
+ position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow-x: hidden;
+ 
+ 
+}
+.page{
+ 
+  background-color:rgba(0, 0, 0, 0.7);
+  
+  width: 90%;
+  z-index: 1;
+  position: relative;
+  max-width: 400px;
+padding: 30px 20px;
+border-radius: 10px;
+color: white;
+border-radius: 10px;
+}
+.sign-text{
+   margin: 20px;
+}
+.sign-text input[type="email"],.sign-text input[type="password"]{
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    
+    margin-bottom: 15px;
+   
+    width: 100%;
+    background-color: rgba(63, 60, 60, 0.7);
+    color: white;
+}
+.sign-text button{
+    padding: 12px;
+    border: none;
+
+    margin-top: 10px;position: relative;
+    left: 10px;
+    color: white;
+    background-color: rgb(197, 29, 29);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+.check{
+   margin-top: 15px;
+}
+.space{
+  float: right;
+  margin-top: 15px;
+}
+a{
+    text-decoration: underline;
+   
+    color: wheat;
+}
+h3, h5, h6{
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+}
+/* media queries */
+@media(max-width:768px){
+    .page{
+        padding: 20px;
+        width: 90%;
+    }
+    .sign-text input,.sign-text button{
+        width: 100%;
+    }
+}
+@media (max-width:468px) {
+    .space{
+        float: none;
+        display: block;
+        margin-top: 10px;
+    }
+    .sign-text h1{
+        font-size:24px;
+        }
+}

@@ -1,0 +1,409 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: white;
+    overflow-x: hidden;
+    
+}
+section{
+     background-color: #000;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    
+}
+.navbar-logo{
+    background-color: rgba(0, 0, 0, 0.815);
+    color: red;
+    font-weight: bolder;
+    width: 100px;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 50px;
+   
+}
+.navbar-button{
+    margin: 10px;
+    padding: 10px;
+   display: flex;
+   justify-content: space-between;
+}
+.sel{
+    background-color: black;
+    color: white;
+    margin-right: 40px;
+    flex-direction: row;
+}
+.navbar-button button{
+    background-color: red;
+    color: white;
+    margin-right: 70px;
+    border: 1px solid black;
+    flex-direction: row;
+}
+.hero-content{
+    font-weight: bolder;
+    background-image: url("../assets/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    max-width: 1200px,100vw;
+    height: 600px;
+    background-color: black;
+    color: white;
+   
+   align-items: center;
+}
+.hero-content h1 {
+    font-size: 50px;
+    position: relative;
+    top: 100px;
+}
+.hero-content p {
+    font-size: 40px;
+    position: relative;
+    top: 100px;
+}
+.hero-content h3 {
+    
+    position: relative;
+    top: 100px;
+}
+.email-form{
+   
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+.email-form input{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    height: 50px;
+    width: 400px;
+    left: -50px;
+    opacity: 0.5;
+    margin: 20px;
+}
+.email-form button{
+     background-color: red;
+    color: white;
+   
+    border: 1px solid black;
+    flex-direction: row;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    left: -60px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.row-coru{
+    border-radius: 10px;
+    
+    padding: 10px;
+    position: relative;
+    top: 50px;
+}
+
+      .col:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.2);
+}
+.card{
+    margin: 20px;
+    width: auto;
+    height: fit-content;
+    background: linear-gradient(45deg, rgb(144, 52, 230),rgb(88, 7, 126));
+}
+.col{
+    height: auto;
+    width: auto;
+   
+    border-radius: 10px;
+    color: white;
+}
+.card-title, .card-text {
+  color: white;
+}
+.card-title{
+    font-size: 30px;
+}
+.card-text{
+    font-size: 20px;
+}
+.ques.basic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 0 20px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.418);
+    font-size: 24px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+a{
+  list-style-type: none;
+  text-decoration: none;
+}
+/* Add this style to space answer properly and make sure it appears below the question */
+.faq-answer {
+  padding: 20px;
+  background-color: rgba(128, 128, 128, 0.418);
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 10px 0 20px 0;
+}
+
+.collapse{
+  
+     
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.418);
+    font-size: 24px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  
+}
+.basic {
+  align-items:end;
+    font-size: 24px;
+   
+}
+.ques:hover{
+    background-color: rgba(128, 128, 128, 0.555);
+}
+.email-formd {
+    position: relative;
+    top: -20px; 
+    left: 250px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.email-formd input {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    height: 50px;
+    width: 400px;
+    left: -50px;
+    opacity: 0.5;
+    margin: 20px;
+}
+
+.email-formd button {
+    background-color: red;
+    color: white;
+    border: 1px solid black;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    left: -60px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    padding: 40px 20px;
+    width: 100%;
+     overflow-x: hidden;
+  box-sizing: border-box;
+}
+footer table {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  overflow-x: auto;
+}
+footer tr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+   margin: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+footer th {
+  padding: 10px;
+  min-width: 140px;
+  text-align: left;
+  margin-left: 80px;
+   color: white;
+}
+footer a{
+    text-decoration: underline;
+    color: white;
+    font-size: 14px;
+}
+
+/* ✅ Responsive overrides start here — no original CSS changed */
+
+/* Make images inside carousel responsive */
+.carousel-item img,
+.row-coru .col img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Navbar responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar-button {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+
+  .sel, .navbar-button button {
+    margin: 5px 0;
+  }
+}
+
+/* Hero content text scaling */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 6vw;
+  }
+
+  .hero-content p {
+    font-size: 4.5vw;
+  }
+
+  .hero-content h3 {
+    font-size: 4vw;
+  }
+
+  .email-form input,
+  .email-form button,
+  .email-formd input,
+  .email-formd button {
+    width: 90% !important;
+    max-width: 400px;
+    margin: 10px auto;
+    display: block;
+    left: 0 !important;
+  }
+
+  .email-form,
+  .email-formd {
+    left: 0 !important;
+    top: auto !important;
+    text-align: center;
+  }
+}
+
+/* Card rows become columns on small screens */
+@media (max-width: 768px) {
+  .row.text-white {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .card {
+    width: 100% !important;
+    margin: 10px 0;
+  }
+}
+
+/* FAQ spacing and mobile-friendly */
+@media (max-width: 768px) {
+  .ques {
+    font-size: 16px;
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+/* Footer responsiveness without changing original CSS */
+@media (max-width: 768px) {
+  footer table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+  }
+
+  footer tr {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  footer th {
+    min-width: 100px;
+    padding: 10px;
+    text-align: left;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+}
+#copy{
+  font-size: 18px; color: white;
+  font-weight: bolder;
+  background-color:rgb(170, 26, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  text-align: center;
+  border-radius: 5px;
+   border: 1px solid white;
+}
+.marquee-container{
+  width: 100%;
+  overflow: hidden;
+  background-color: #e50914;
+  padding: 10px 0;
+  
+}
+.marquee-text{
+  display: inline-block;
+  white-space: nowrap;
+  color: white;
+  font-size: 14px;
+  animation: scroll-left 15s linear infinite;
+}
+@keyframes scroll-left {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
