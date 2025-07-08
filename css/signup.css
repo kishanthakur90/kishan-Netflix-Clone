@@ -131,3 +131,25 @@ h6 {
     font-size: 16px;
   }
 }
+.marquee-container{
+  width: 100%;
+  overflow: hidden;
+  background-color: #e50914;
+  padding: 10px 0;
+  
+}
+.marquee-text{
+  display: inline-block;
+  white-space: nowrap;
+  color: white;
+  font-size: 14px;
+  animation: scroll-left 15s linear infinite;
+}
+@keyframes scroll-left {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}

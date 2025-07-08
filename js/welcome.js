@@ -45,8 +45,8 @@ if(window.location.pathname.endsWith("welcome.html")){
         window.location.href = "signin.html";
     }else{
         document.getElementById("userdetails").innerHTML = `
-        <p> Name: ${currentUser.name}</p><br>
-        <p> Email: ${currentUser.email}</p><br>
+        <p style="color:white;"> Name: ${currentUser.name}</p><br>
+        <p style="color:white;"> Email: ${currentUser.email}</p><br>
         `;
     }
 }
