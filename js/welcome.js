@@ -31,7 +31,7 @@ document.getElementById("loginForm")?.addEventListener("submit",function (e){
     const password = document.getElementById("loginPassword").value.trim();
     const user = users.find((user) => user.email === email && user.password === password);
     if(user){
-      localStorage.setItem("currentuser",JSON.stringify(user));
+      localStorage.setItem("currentUser",JSON.stringify(user));
         window.location.href = "welcome.html";
     }else{
          document.getElementById("message").innerText = "Invalid email or password!";
